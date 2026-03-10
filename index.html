@@ -14,18 +14,17 @@
   <!-- Navigation -->
   <nav class="navbar" id="navbar">
     <div class="container nav-container">
-      <a href="#" class="nav-brand">
+      <a href="index.html" class="nav-brand">
         <span class="brand-icon">&#9670;</span> Red Barn
       </a>
       <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
         <span></span><span></span><span></span>
       </button>
       <ul class="nav-links" id="navLinks">
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#why-us">Why Us</a></li>
-        <li><a href="#facility">Facility</a></li>
-        <li><a href="#contact" class="nav-cta">Contact Us</a></li>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="nav-cta">Contact Us</a></li>
       </ul>
     </div>
   </nav>
@@ -37,8 +36,8 @@
       <h1>Red Barn Rehab <span class="accent">&</span> Retirement</h1>
       <p class="hero-subtitle">Exceptional equine rehabilitation, layup boarding, and retirement care in the heart of Northern California</p>
       <div class="hero-actions">
-        <a href="#services" class="btn btn-primary">Our Services</a>
-        <a href="#contact" class="btn btn-outline">Get in Touch</a>
+        <a href="services.html" class="btn btn-primary">Our Services</a>
+        <a href="contact.html" class="btn btn-outline">Get in Touch</a>
       </div>
       <div class="hero-badge">
         <span>Vacaville, CA</span>
@@ -48,52 +47,31 @@
     </div>
   </header>
 
-  <!-- About Section -->
-  <section class="section about" id="about">
+  <!-- Intro Section -->
+  <section class="section about" id="intro">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">Our Story</span>
+        <span class="section-tag">Welcome</span>
         <h2>Where Every Horse Matters</h2>
       </div>
-      <div class="about-grid">
-        <div class="about-text">
-          <p class="lead">Located on the beautiful, quiet outskirts of Vacaville, Red Barn Rehab & Retirement is dedicated to providing exceptional care for horses in the greater Northern California area.</p>
-          <p>We specialize in offering a comprehensive range of services, including rehabilitation, layup boarding, and retirement &mdash; all tailored to meet the unique needs of each horse. We pride ourselves on creating a nurturing environment where horses can thrive, whether they are recovering from an injury or enjoying their golden years.</p>
-          <p>Red Barn is the ideal choice for the whole range of horse owners. Whether you want the best for your backyard pony or need to keep your top show horse at peak performance, we offer accessible treatments that benefit all.</p>
-        </div>
-        <div class="about-highlights">
-          <div class="highlight-card">
-            <div class="highlight-icon">&#9733;</div>
-            <h3>Personalized Care</h3>
-            <p>Our small, intimate facility enables us to focus on the specific needs of each horse with individualized attention.</p>
-          </div>
-          <div class="highlight-card">
-            <div class="highlight-icon">&#9829;</div>
-            <h3>Trusted Reputation</h3>
-            <p>Built on word-of-mouth and a proven track record of compassionate, results-driven equine care.</p>
-          </div>
-          <div class="highlight-card">
-            <div class="highlight-icon">&#9878;</div>
-            <h3>Expert Network</h3>
-            <p>Strong relationships with leading veterinarians from UC Davis and farriers of the highest caliber.</p>
-          </div>
-        </div>
+      <div class="intro-content">
+        <p class="lead">Located on the beautiful, quiet outskirts of Vacaville, Red Barn Rehab & Retirement is dedicated to providing exceptional care for horses in the greater Northern California area.</p>
+        <p>We specialize in offering a comprehensive range of services, including rehabilitation, layup boarding, and retirement &mdash; all tailored to meet the unique needs of each horse. Whether you want the best for your backyard pony or need to keep your top show horse at peak performance, we offer accessible treatments that benefit all.</p>
+        <a href="about.html" class="btn btn-primary" style="margin-top: 24px;">Learn More About Us</a>
       </div>
     </div>
   </section>
 
-  <!-- Services Section -->
-  <section class="section services" id="services">
+  <!-- Services Overview -->
+  <section class="section services">
     <div class="container">
       <div class="section-header">
         <span class="section-tag">What We Offer</span>
         <h2>Our Services</h2>
         <p class="section-desc">Comprehensive care solutions designed around your horse's unique needs</p>
       </div>
-      <div class="services-grid">
-        <!-- Rehabilitation -->
-        <div class="service-card service-featured">
-          <div class="service-badge">Most Popular</div>
+      <div class="services-overview-grid">
+        <div class="service-overview-card">
           <div class="service-icon">
             <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="32" cy="32" r="30" stroke="currentColor" stroke-width="2"/>
@@ -102,25 +80,9 @@
             </svg>
           </div>
           <h3>Rehabilitation</h3>
-          <p>Comprehensive care and recovery solutions for horses of all ages and conditions, featuring state-of-the-art equipment and expert oversight.</p>
-          <ul class="service-features">
-            <li>
-              <strong>Water Treadmill</strong>
-              <span>Low-impact exercise that improves joint flexibility and muscle strength &mdash; ideal for recovery from injuries and surgery</span>
-            </li>
-            <li>
-              <strong>Cold Water Spa</strong>
-              <span>Reduces inflammation, swelling, and pain while promoting circulation and accelerating healing</span>
-            </li>
-            <li>
-              <strong>Haul-In Day Treatments</strong>
-              <span>Don't need full boarding? Trailer your horse in for individual treatment sessions</span>
-            </li>
-          </ul>
+          <p>State-of-the-art water treadmill and cold water spa therapy for recovery from injuries, surgery, and more.</p>
         </div>
-
-        <!-- Layup -->
-        <div class="service-card">
+        <div class="service-overview-card">
           <div class="service-icon">
             <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="32" cy="32" r="30" stroke="currentColor" stroke-width="2"/>
@@ -129,25 +91,9 @@
             </svg>
           </div>
           <h3>Layup Boarding</h3>
-          <p>Comprehensive and customizable care ensuring your horse's well-being and comfort during their recovery transition.</p>
-          <ul class="service-features">
-            <li>
-              <strong>24/7 On-Site Staff</strong>
-              <span>Constant supervision and attentive care around the clock</span>
-            </li>
-            <li>
-              <strong>Flexible Housing</strong>
-              <span>Stalls with attached paddocks, or small and large outdoor paddocks with shelters</span>
-            </li>
-            <li>
-              <strong>Seamless Transition</strong>
-              <span>Available to horses graduating from rehab or those needing dedicated support</span>
-            </li>
-          </ul>
+          <p>24/7 on-site staff, flexible housing options, and customizable care during your horse's recovery transition.</p>
         </div>
-
-        <!-- Retirement -->
-        <div class="service-card">
+        <div class="service-overview-card">
           <div class="service-icon">
             <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="32" cy="32" r="30" stroke="currentColor" stroke-width="2"/>
@@ -157,93 +103,11 @@
             </svg>
           </div>
           <h3>Retirement</h3>
-          <p>A compassionate approach to ensure the well-being and dignity of horses in their golden years.</p>
-          <ul class="service-features">
-            <li>
-              <strong>Custom Feeding Plans</strong>
-              <span>Tailored nutrition promoting optimal health and vitality for each individual horse</span>
-            </li>
-            <li>
-              <strong>Regular Veterinary Care</strong>
-              <span>Health monitoring and prompt attention to any medical concerns</span>
-            </li>
-            <li>
-              <strong>Full Daily Care</strong>
-              <span>Feeding, grooming, exercise, and companionship &mdash; every horse is loved dearly</span>
-            </li>
-          </ul>
+          <p>Compassionate full care for horses in their golden years, with custom feeding plans and regular vet attention.</p>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- Why Us Section -->
-  <section class="section why-us" id="why-us">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">The Difference</span>
-        <h2>Why Red Barn?</h2>
-      </div>
-      <div class="why-grid">
-        <div class="why-card">
-          <div class="why-number">01</div>
-          <h3>Proximity to UC Davis</h3>
-          <p>Located just 20 minutes from the top veterinary school in the country, with leading vets who regularly visit our property.</p>
-        </div>
-        <div class="why-card">
-          <div class="why-number">02</div>
-          <h3>Small & Intimate</h3>
-          <p>Our boutique facility means your horse isn't just a number. Every horse receives individualized, hands-on attention from our team.</p>
-        </div>
-        <div class="why-card">
-          <div class="why-number">03</div>
-          <h3>Proven Equipment</h3>
-          <p>Water treadmill and cold water spa therapy &mdash; research-backed and trusted by the equine community for rehabilitation and wellness.</p>
-        </div>
-        <div class="why-card">
-          <div class="why-number">04</div>
-          <h3>Flexible Options</h3>
-          <p>From full boarding rehab plans to haul-in day treatments, we work around your needs and your horse's schedule.</p>
-        </div>
-        <div class="why-card">
-          <div class="why-number">05</div>
-          <h3>One of Few in NorCal</h3>
-          <p>Only the third facility north of Oakdale to offer water treadmill and cold water spa services for the large Northern California horse community.</p>
-        </div>
-        <div class="why-card">
-          <div class="why-number">06</div>
-          <h3>Built on Trust</h3>
-          <p>Our reputation has grown entirely through word-of-mouth, a testament to the quality of care we provide every single day.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Facility Section -->
-  <section class="section facility" id="facility">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Our Home</span>
-        <h2>The Facility</h2>
-        <p class="section-desc">A peaceful setting on the outskirts of Vacaville, designed with your horse's comfort in mind</p>
-      </div>
-      <div class="facility-features">
-        <div class="facility-item">
-          <h3>Rehabilitation Area</h3>
-          <p>State-of-the-art water treadmill and cold water spa in a purpose-built treatment space.</p>
-        </div>
-        <div class="facility-item">
-          <h3>Stalls & Paddocks</h3>
-          <p>Multiple housing options including stalls with attached paddocks and various sized outdoor paddocks with shelters.</p>
-        </div>
-        <div class="facility-item">
-          <h3>Quiet Setting</h3>
-          <p>Beautiful, peaceful surroundings on the outskirts of Vacaville provide a calm, low-stress environment.</p>
-        </div>
-        <div class="facility-item">
-          <h3>Easy Access</h3>
-          <p>Conveniently located for haul-in clients throughout the greater Northern California area.</p>
-        </div>
+      <div style="text-align: center; margin-top: 40px;">
+        <a href="services.html" class="btn btn-primary">View All Services</a>
       </div>
     </div>
   </section>
@@ -254,70 +118,7 @@
       <div class="cta-content">
         <h2>Give Your Horse the Care They Deserve</h2>
         <p>Whether your horse needs rehabilitation, a restful layup, or a loving retirement home, we're here to help. Reach out to discuss how we can create a personalized care plan.</p>
-        <a href="#contact" class="btn btn-primary btn-lg">Contact Us Today</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section class="section contact" id="contact">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Get Started</span>
-        <h2>Contact Us</h2>
-        <p class="section-desc">We'd love to hear from you. Reach out to learn more about our services or schedule a visit.</p>
-      </div>
-      <div class="contact-grid">
-        <div class="contact-info">
-          <div class="contact-item">
-            <h3>Location</h3>
-            <p>Vacaville, California<br>Northern California</p>
-          </div>
-          <div class="contact-item">
-            <h3>Services Available</h3>
-            <ul>
-              <li>Rehabilitation (Water Treadmill & Cold Spa)</li>
-              <li>Layup Boarding</li>
-              <li>Retirement Boarding</li>
-              <li>Haul-In Day Treatments</li>
-            </ul>
-          </div>
-          <div class="contact-item">
-            <h3>Hours</h3>
-            <p>24/7 On-Site Care<br>Contact us to schedule a visit</p>
-          </div>
-        </div>
-        <form class="contact-form" id="contactForm">
-          <div class="form-group">
-            <label for="name">Your Name</label>
-            <input type="text" id="name" name="name" required>
-          </div>
-          <div class="form-group">
-            <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" required>
-          </div>
-          <div class="form-group">
-            <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" name="phone">
-          </div>
-          <div class="form-group">
-            <label for="service">Service Interested In</label>
-            <select id="service" name="service">
-              <option value="">Select a service...</option>
-              <option value="rehab">Rehabilitation</option>
-              <option value="layup">Layup Boarding</option>
-              <option value="retirement">Retirement</option>
-              <option value="haulin">Haul-In Day Treatment</option>
-              <option value="other">Other / General Inquiry</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="message">Tell Us About Your Horse</label>
-            <textarea id="message" name="message" rows="5" placeholder="Age, breed, what brings you to Red Barn..."></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary btn-full">Send Message</button>
-          <p class="form-note">We'll get back to you within 24 hours.</p>
-        </form>
+        <a href="contact.html" class="btn btn-primary btn-lg">Contact Us Today</a>
       </div>
     </div>
   </section>
@@ -331,10 +132,10 @@
           <p>Exceptional equine care in Vacaville, California.</p>
         </div>
         <div class="footer-links">
-          <a href="#about">About</a>
-          <a href="#services">Services</a>
-          <a href="#why-us">Why Us</a>
-          <a href="#contact">Contact</a>
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
         </div>
       </div>
       <div class="footer-bottom">

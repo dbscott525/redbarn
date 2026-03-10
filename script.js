@@ -1,13 +1,16 @@
-// Navbar scroll behavior
+// Navbar scroll behavior (only on home page with hero)
 const navbar = document.getElementById('navbar');
+const isInnerPage = document.body.classList.contains('inner-page');
 
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 50) {
-    navbar.classList.add('scrolled');
-  } else {
-    navbar.classList.remove('scrolled');
-  }
-});
+if (!isInnerPage) {
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
+  });
+}
 
 // Mobile nav toggle
 const navToggle = document.getElementById('navToggle');
@@ -38,8 +41,7 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, observerOptions);
 
-// Apply fade-in to section elements
-document.querySelectorAll('.section-header, .highlight-card, .service-card, .why-card, .facility-item, .contact-form, .contact-info, .cta-content').forEach(el => {
+document.querySelectorAll('.section-header, .highlight-card, .service-card, .service-overview-card, .service-detail-card, .why-card, .facility-item, .contact-form, .contact-info, .cta-content, .about-text, .service-detail-header').forEach(el => {
   el.classList.add('fade-in');
   observer.observe(el);
 });
@@ -47,28 +49,28 @@ document.querySelectorAll('.section-header, .highlight-card, .service-card, .why
 // Contact form handling
 const contactForm = document.getElementById('contactForm');
 
-contactForm.addEventListener('submit', (e) => {
-  e.preventDefault();
+if (contactForm) {
+  contactForm.addEventListener('submit', (e) => {
+    e.preventDefault();
 
-  const formData = new FormData(contactForm);
-  const data = Object.fromEntries(formData);
+    contactForm.innerHTML = `
+      <div style="text-align: center; padding: 40px 20px;">
+        <div style="font-size: 3rem; margin-bottom: 16px; color: #5C7A56;">&#10003;</div>
+        <h3 style="margin-bottom: 12px;">Thank You!</h3>
+        <p style="color: #6B6560;">We've received your message and will get back to you within 24 hours.</p>
+      </div>
+    `;
+  });
+}
 
-  // Show success message
-  contactForm.innerHTML = `
-    <div style="text-align: center; padding: 40px 20px;">
-      <div style="font-size: 3rem; margin-bottom: 16px; color: #5C7A56;">&#10003;</div>
-      <h3 style="margin-bottom: 12px;">Thank You!</h3>
-      <p style="color: #6B6560;">We've received your message and will get back to you within 24 hours.</p>
-    </div>
-  `;
-});
-
-// Smooth scroll for anchor links
+// Smooth scroll for same-page anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
-    e.preventDefault();
-    const target = document.querySelector(this.getAttribute('href'));
+    const href = this.getAttribute('href');
+    if (href === '#') return;
+    const target = document.querySelector(href);
     if (target) {
+      e.preventDefault();
       target.scrollIntoView({ behavior: 'smooth' });
     }
   });

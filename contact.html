@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Red Barn Rehab & Retirement</title>
+  <meta name="description" content="Contact Red Barn Rehab & Retirement to learn more about our equine rehabilitation, layup, and retirement services in Vacaville, CA.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="inner-page">
+  <!-- Navigation -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="nav-brand">
+        <span class="brand-icon">&#9670;</span> Red Barn
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="nav-cta active">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <div class="container">
+      <span class="section-tag">Get Started</span>
+      <h1>Contact Us</h1>
+      <p>We'd love to hear from you. Reach out to learn more about our services or schedule a visit.</p>
+    </div>
+  </header>
+
+  <!-- Contact Section -->
+  <section class="section contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-item">
+            <h3>Location</h3>
+            <p>Vacaville, California<br>Northern California</p>
+          </div>
+          <div class="contact-item">
+            <h3>Services Available</h3>
+            <ul>
+              <li>Rehabilitation (Water Treadmill & Cold Spa)</li>
+              <li>Layup Boarding</li>
+              <li>Retirement Boarding</li>
+              <li>Haul-In Day Treatments</li>
+            </ul>
+          </div>
+          <div class="contact-item">
+            <h3>Hours</h3>
+            <p>24/7 On-Site Care<br>Contact us to schedule a visit</p>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone">
+          </div>
+          <div class="form-group">
+            <label for="service">Service Interested In</label>
+            <select id="service" name="service">
+              <option value="">Select a service...</option>
+              <option value="rehab">Rehabilitation</option>
+              <option value="layup">Layup Boarding</option>
+              <option value="retirement">Retirement</option>
+              <option value="haulin">Haul-In Day Treatment</option>
+              <option value="other">Other / General Inquiry</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Tell Us About Your Horse</label>
+            <textarea id="message" name="message" rows="5" placeholder="Age, breed, what brings you to Red Barn..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+          <p class="form-note">We'll get back to you within 24 hours.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h3><span class="brand-icon">&#9670;</span> Red Barn Rehab & Retirement</h3>
+          <p>Exceptional equine care in Vacaville, California.</p>
+        </div>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Red Barn Rehab & Retirement. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
