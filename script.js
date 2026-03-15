@@ -46,22 +46,7 @@ document.querySelectorAll('.section-header, .highlight-card, .service-card, .ser
   observer.observe(el);
 });
 
-// Contact form handling
-const contactForm = document.getElementById('contactForm');
-
-if (contactForm) {
-  contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-
-    contactForm.innerHTML = `
-      <div style="text-align: center; padding: 40px 20px;">
-        <div style="font-size: 3rem; margin-bottom: 16px; color: #5C7A56;">&#10003;</div>
-        <h3 style="margin-bottom: 12px;">Thank You!</h3>
-        <p style="color: #6B6560;">We've received your message and will get back to you within 24 hours.</p>
-      </div>
-    `;
-  });
-}
+// Contact form handling is done by Netlify Forms — no JavaScript override needed
 
 // Smooth scroll for same-page anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
